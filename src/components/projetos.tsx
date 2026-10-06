@@ -1,3 +1,6 @@
+import { ArrowUpRight } from "lucide-react";
+import { RiGithubLine } from "react-icons/ri";
+
 const projects = [
   {
     index: "01",
@@ -7,6 +10,8 @@ const projects = [
     tags: ["React", "TypeScript", "Tailwind CSS"],
     image: "/assets/project-dashboard.jpg",
     alt: "Interface demonstrativa de dashboard analítico",
+    liveUrl: "",
+    repoUrl: "",
   },
   {
     index: "02",
@@ -16,6 +21,8 @@ const projects = [
     tags: ["Next.js", "React", "CSS"],
     image: "/assets/project-planner.jpg",
     alt: "Interface demonstrativa de planejador de estudos",
+    liveUrl: "",
+    repoUrl: "",
   },
   {
     index: "03",
@@ -25,6 +32,8 @@ const projects = [
     tags: ["React", "HTML", "Tailwind CSS"],
     image: "/assets/project-system.jpg",
     alt: "Interface demonstrativa de sistema de componentes",
+    liveUrl: "",
+    repoUrl: "",
   },
 ];
 function Projetos() {
@@ -75,6 +84,22 @@ function Projetos() {
                     <li key={tag}>{tag}</li>
                   ))}
                 </ul>
+                <div className="flex gap-2 pb-6">
+                  <a
+                    href={project.liveUrl}
+                    aria-label={`Ver projeto ${project.title} no ar`}
+                    className="inline-flex items-center gap-1.5 border border-project-line px-3 py-2 font-mono text-[0.68rem] font-semibold uppercase text-project-ink transition-colors duration-200 hover:border-project-coral hover:text-project-coral"
+                  >
+                    Ver no ar <ArrowUpRight size={13} />
+                  </a>
+                  <a
+                    href={project.repoUrl}
+                    aria-label={`Ver código de ${project.title} no GitHub`}
+                    className="inline-flex items-center gap-1.5 border border-project-line px-3 py-2 font-mono text-[0.68rem] font-semibold uppercase text-project-ink transition-colors duration-200 hover:border-project-coral hover:text-project-coral"
+                  >
+                    <RiGithubLine size={13} /> Código
+                  </a>
+                </div>
               </div>
             </article>
           ))}
