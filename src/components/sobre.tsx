@@ -1,6 +1,6 @@
 function Sobre() {
   return (
-    <section className="border-t border-border bg-secondary">
+    <section id="sobre" className="border-t border-border bg-secondary">
       <div className="mx-auto grid max-w-content gap-12 px-5 py-24">
         <div className="">
           <p className=" section-label">01 / Sobre</p>
