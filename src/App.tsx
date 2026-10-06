@@ -1,4 +1,5 @@
 import "./App.css";
+import Habilidades from "./components/habilidades";
 import Inicio from "./components/inicio";
 import Main from "./components/main";
 import Projetos from "./components/projetos";
@@ -13,6 +14,7 @@ function App() {
         <Inicio />
         <Sobre />
         <Projetos />
+        <Habilidades />
       </Main>
     </>
   );
