@@ -59,7 +59,7 @@ function Projetos() {
             >
               <div className="relative aspect-\[16/10] overflow-hidden bg-project-line/25">
                 <img
-                  src={`/src${project.image}`}
+                  src={project.image}
                   alt={project.alt}
                   loading="lazy"
                   width={1200}
