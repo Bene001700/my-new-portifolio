@@ -4,36 +4,37 @@ import { RiGithubLine } from "react-icons/ri";
 const projects = [
   {
     index: "01",
-    title: "Dashboard analítico",
+    title: "Product Preview Card",
     description:
-      "Um estudo de interface para transformar dados complexos em decisões rápidas, com filtros, indicadores e visualização responsiva.",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
-    image: "/assets/project-dashboard.jpg",
-    alt: "Interface demonstrativa de dashboard analítico",
-    liveUrl: "",
-    repoUrl: "",
+      "Um card de visualização previa de um produto. Nele consta uma descrição preço do produto.",
+    tags: ["HTML", "CSS"],
+    image: "/assets/product-preview-card-component-main-two-rho.png",
+    alt: "Interface produto preview card componente",
+    liveUrl: "https://product-preview-card-component-main-two-rho.vercel.app/",
+    repoUrl:
+      "https://github.com/Bene001700/product-preview-card-component-main",
   },
   {
     index: "02",
-    title: "Planejador de estudos",
+    title: "Preview card",
     description:
-      "Uma experiência organizada para planejar tarefas e acompanhar rotinas, combinando calendário, quadros e prioridades.",
-    tags: ["Next.js", "React", "CSS"],
-    image: "/assets/project-planner.jpg",
-    alt: "Interface demonstrativa de planejador de estudos",
-    liveUrl: "",
-    repoUrl: "",
+      "Uma cartão de apresentação de conteúdo com informações prévias titulos e etc...",
+    tags: ["HTML", "CSS"],
+    image: "/assets/preview-card-main-seven.png",
+    alt: "Interface preview card",
+    liveUrl: "https://preview-card-main-seven.vercel.app/",
+    repoUrl: "https://github.com/Bene001700/preview-card-main",
   },
   {
     index: "03",
-    title: "Sistema de componentes",
+    title: "Pagina de receita",
     description:
-      "Uma biblioteca visual criada para manter consistência, acelerar entregas e garantir acessibilidade em diferentes telas.",
-    tags: ["React", "HTML", "Tailwind CSS"],
-    image: "/assets/project-system.jpg",
-    alt: "Interface demonstrativa de sistema de componentes",
-    liveUrl: "",
-    repoUrl: "",
+      "Uma pagina de receita descriminando os Ingredientes e o modo de preparo.",
+    tags: ["HTML", "CSS"],
+    image: "/assets/recipe-page-main-one-jet.png",
+    alt: "Interface de uma Pagina de receita",
+    liveUrl: "https://recipe-page-main-one-jet.vercel.app/",
+    repoUrl: "https://github.com/Bene001700/recipe-page-main",
   },
 ];
 function Projetos() {
@@ -89,6 +90,7 @@ function Projetos() {
                     href={project.liveUrl}
                     aria-label={`Ver projeto ${project.title} no ar`}
                     className="inline-flex items-center gap-1.5 border border-project-line px-3 py-2 font-mono text-[0.68rem] font-semibold uppercase text-project-ink transition-colors duration-200 hover:border-project-coral hover:text-project-coral"
+                    target="_blank"
                   >
                     Ver no ar <ArrowUpRight size={13} />
                   </a>
@@ -96,6 +98,7 @@ function Projetos() {
                     href={project.repoUrl}
                     aria-label={`Ver código de ${project.title} no GitHub`}
                     className="inline-flex items-center gap-1.5 border border-project-line px-3 py-2 font-mono text-[0.68rem] font-semibold uppercase text-project-ink transition-colors duration-200 hover:border-project-coral hover:text-project-coral"
+                    target="_blank"
                   >
                     <RiGithubLine size={13} /> Código
                   </a>
